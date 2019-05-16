@@ -1,0 +1,68 @@
+html, body {
+	height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #fff;
+	font-family: Arial, Tahoma, sans-serif;
+	display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px 1fr 75px;
+}
+* {
+	box-sizing: border-box;
+}
+
+header,
+footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header {
+	width: 100%;
+	position: relative;
+	border-top: 14px #98cc00 solid;
+	border-bottom: 3px #98cc00 solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section {
+	padding: 20px;
+}
+
+footer {
+	text-align: center;
+	color: #a5a5a5;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.03);
+	border-top: 3px #98cc00 solid;
+
+}
+
+.moods-grid {
+	width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-content: center;
+}
+.moods-grid .item {
+	background-color: rgba(152,204,0,0.1);
+	border-radius: 8px;
+	border: 1px #98cc00 solid;
+	cursor: pointer;
+}
+.moods-grid .item:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
